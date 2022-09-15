@@ -1,0 +1,17 @@
+{
+  "name": "limitless-ecommerce-starter",
+  "version": "1.0.0",
+  "description": "The standard starter theme to build a headless Shopify site utilising Gatsby + Sanity + Shopify",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently --kill-others \"npm:cms\" \"npm:app\"",
+    "cms": "npm start --prefix cms",
+    "app": "npm start --prefix app"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.4.0"
+  }
+}
