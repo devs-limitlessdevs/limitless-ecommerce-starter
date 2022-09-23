@@ -1,6 +1,5 @@
 import * as React from "react";
 import { graphql, Link } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
 import {
   CheckCircleIcon,
   StarIcon,
@@ -14,7 +13,6 @@ import Navbar from "../../components/navbar/Navbar";
 const SingleProductPage = ({ data }) => {
   const { shopifyProduct } = data;
   const productImage = shopifyProduct.featuredImage.src;
-  console.log("Single product data: ", productImage);
 
   return (
     <>
